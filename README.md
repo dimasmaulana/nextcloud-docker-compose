@@ -42,3 +42,7 @@ This file defines the services that make up our Nextcloud environment:
 3. Run `docker-compose up -d` to start the containers.
 4. Access Nextcloud at `http://localhost:${PORT}`.
 
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
