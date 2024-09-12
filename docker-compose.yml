@@ -12,7 +12,7 @@ services:
       - MYSQL_DATABASE=nextcloud
       - MYSQL_USER=nextcloud
   app:
-    image: nextcloud:latest
+    build: .
     ports:
       - ${PORT}:80
     links:
@@ -34,5 +34,6 @@ services:
       - db
   redis:
     image: redis
+    restart: always
     volumes:
       - ./redis/:/data/
